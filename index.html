@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta content = "text/html;charset=UTF-8"
+        http-equiv="Content-Type">
+    <link rel="stylesheet" href="style.css">
+    <title>Quizzy</title>
+</head>
+
+<body>
+    <div id="header-div">
+        <h1 class="quiz-name">QUIZZER</h1>
+    </div>
+    <div id="add-question-div">
+        <form id="add-question-form">
+            <label for="quiz-select" class="labels">Select quiz to modify:</label><br>
+            <select name="quiz-select" id="quiz-select">
+                <option value="q1">q1</option>
+                <option value="q2">q2</option>
+                <option value="q3">q3</option>
+                <option value="q4">q4</option>
+            </select><br>
+            <h3>Add new question to quiz:</h5>
+            <label for="question-input">Add question with true/false answer:</label><br>
+            <input type="text" id="question-input" name="question-input" placeholder="Write here your amazing question"><br>
+            <label for="answer-input">Select correct answer to the question:</label><br>
+            <select name="answer-input" id="answer-input">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select><br>
+            <button type="submit">Add</button>
+          </form>
+    </div>
+
+    <div id="question-table-div">
+
+            <table id="quiz-table">
+                <caption>Quiz questions</caption>
+                <tr id="table-titles">
+                    <th>Question</th>
+                    <th>Answer</th>
+                  </tr>
+                  <tr>
+                    <td>Question1</td>
+                    <td>true</td>
+                  </tr>
+                  <tr>
+                    <td>Question2</td>
+                    <td>flase</td>
+                  </tr>
+                  <tr>
+                    <td>Question3</td>
+                    <td>true</td>
+                  </tr>
+            </table>
+
+    </div>
+
+    <div id="quiz-div">
+        <div id="play-quiz-select-div">
+            <label for="play-quiz-select">Select quiz to play:</label><br>
+            <select name="play-quiz-select" id="play-quiz-select">
+                <option value="q1">q1</option>
+                <option value="q2">q2</option>
+                <option value="q3">q3</option>
+                <option value="q4">q4</option>
+            </select><br>
+        </div>
+        <div >
+            <button id="start-quiz-button" type="button">START QUIZ</button>
+        </div>
+    </div>
+
+    <div id="footer-div"></div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+
+@media only screen and (max-width: 600px) {
+    #header-div,
+    #add-question-div,
+    #question-table-div,
+    #quiz-div,
+    #footer-div {
+        width: 100%;
+    }
+  }
+
+@media only screen and (min-width: 601px){
+
+    body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        }
+        
+    #header-div { grid-area: 1 / 1 / 2 / 3; }
+    #add-question-div { grid-area: 2 / 1 / 4 / 2; }
+    #question-table-div { grid-area: 4 / 1 / 6 / 2; }
+    #quiz-div { grid-area: 2 / 2 / 6 / 3; }
+    #footer-div { grid-area: 6 / 1 / 7 / 3; }
+}
+
+#header-div{
+    background-color: #AA96DA;
+    text-align: center;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: larger;
+}
+
+#add-question-div{
+    background-color: #A8D8EA;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#question-table-div{
+    background-color: #A8D8EA;
+    padding-left: 5%;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#quiz-div{
+    background-color: #FFFFD2;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: larger;
+}
+
+#footer-div{
+    background-color: #FCBAD3;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: larger;
+}
+
+#quiz-select{
+    width: 200px;
+}
+
+form{
+    padding: 20px 0px 20px;
+}
+
+input{
+    margin: 10px 0px 10px;
+}
+
+select{
+    margin: 10px 0px 10px;
+}
+
+#question-input{
+    width: 100%;
+}
