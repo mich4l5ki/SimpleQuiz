@@ -137,6 +137,11 @@ select{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
+#new-quiz-input{
+    width: 94%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
 #answer-select{
     width: 20%;
     text-align: center;
@@ -184,6 +189,11 @@ select{
 
 #quiz-table tbody td:last-of-type{
     text-align: center;
+}
+
+#table-titles button {
+    margin: 0 auto;
+    display: block;
 }
 
 button {

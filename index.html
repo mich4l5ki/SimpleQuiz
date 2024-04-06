@@ -16,10 +16,6 @@
         <form id="add-question-form">
             <label for="quiz-select" class="labels">Select quiz to modify:</label><br>
             <select name="quiz-select" id="quiz-select">
-                <!-- <option value="q1">q1</option>
-                <option value="q2">q2</option>
-                <option value="q3">q3</option>
-                <option value="q4">q4</option> -->
             </select><br>
             <h3>Add new question to quiz:</h3>
             <label for="question-input">Add question with true/false answer:</label><br>
@@ -30,7 +26,12 @@
                 <option value="false">false</option>
             </select><br>
             <button type="submit" id="add-question-btn">Add</button>
-          </form>
+            </form>
+
+            <h3>Create new quiz:</h3>
+            <label for="new-quiz-input">Write new quiz name:</label><br>
+            <input type="text" id="new-quiz-input" name="new-quiz-input" placeholder="Write here name of your new quiz"><br>
+            <button type="button" id="create-quiz-btn">Create</button>
     </div>
 
     <div id="question-table-div">
@@ -39,33 +40,12 @@
                 <!-- <caption>Quiz questions</caption> -->
                 <thead id="table-titles">
                     <tr>
-                        <th>Question</th>
+                        <th>Question(double-click to remove)</th>
                         <th><button type="submit" id="show-answers-button">Show answers</button></th>
-                        <th>Delete question</th>
+                        <th>Action</th>
                     </tr>
                   </thead>
-                  <tbody>
-                  <tr>
-                    <td>Question1</td>
-                    <td>true</td>
-                    <td><button type="button" class="delete-question-button">DELETE</button></td>
-                  </tr>
-                  <tr>
-                    <td>Question2</td>
-                    <td>flase</td>
-                    <td>DELETE</td>
-                  </tr>
-                  <tr>
-                    <td>Question3</td>
-                    <td>true</td>
-                    <td>DELETE</td>
-                  </tr>
-                  <tr>
-                    <td>Question3</td>
-                    <td>true</td>
-                    <td>DELETE</td>
-                  </tr>
-                  </tbody>
+                  <tbody></tbody>
 
             </table>
 
@@ -75,10 +55,6 @@
         <div id="play-quiz-select-div">
             <label for="play-quiz-select">Select quiz to play:</label><br>
             <select name="play-quiz-select" id="play-quiz-select">
-                <!-- <option value="q1">q1</option>
-                <option value="q2">q2</option>
-                <option value="q3">q3</option>
-                <option value="q4">q4</option> -->
             </select><br>
             <button id="start-quiz-button" type="button">START QUIZ</button>
             <p id="countdown">0<p>
