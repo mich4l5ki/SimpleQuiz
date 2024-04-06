@@ -16,20 +16,20 @@
         <form id="add-question-form">
             <label for="quiz-select" class="labels">Select quiz to modify:</label><br>
             <select name="quiz-select" id="quiz-select">
-                <option value="q1">q1</option>
+                <!-- <option value="q1">q1</option>
                 <option value="q2">q2</option>
                 <option value="q3">q3</option>
-                <option value="q4">q4</option>
+                <option value="q4">q4</option> -->
             </select><br>
             <h3>Add new question to quiz:</h3>
             <label for="question-input">Add question with true/false answer:</label><br>
             <input type="text" id="question-input" name="question-input" placeholder="Write here your amazing question"><br>
             <label for="answer-select">Select correct answer to the question:</label><br>
-            <select name="answer-select" id="answer-select">
+            <select name="c" id="answer-select">
                 <option value="true">true</option>
                 <option value="false">false</option>
             </select><br>
-            <button type="submit">Add</button>
+            <button type="submit" id="add-question-btn">Add</button>
           </form>
     </div>
 
@@ -75,19 +75,23 @@
         <div id="play-quiz-select-div">
             <label for="play-quiz-select">Select quiz to play:</label><br>
             <select name="play-quiz-select" id="play-quiz-select">
-                <option value="q1">q1</option>
+                <!-- <option value="q1">q1</option>
                 <option value="q2">q2</option>
                 <option value="q3">q3</option>
-                <option value="q4">q4</option>
+                <option value="q4">q4</option> -->
             </select><br>
             <button id="start-quiz-button" type="button">START QUIZ</button>
+            <p id="countdown">0<p>
         </div>
     </div>
 
     <div id="footer-div">
         <p>Hubert Michalski 2024</p>
-        <a href="used-pages.txt">References</a>
+        <a href="used-pages.txt" id="ref-link">References</a>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
 
 </body>
 
