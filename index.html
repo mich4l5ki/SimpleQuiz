@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta content = "text/html;charset=UTF-8"
+        http-equiv="Content-Type">
+    <link rel="stylesheet" href="style.css">
+    <title>Quizzy</title>
+</head>
+
+<body>
+    <div id="header-div">
+        <h1 class="quiz-name">QUIZZER</h1>
+    </div>
+    <div id="add-question-div">
+        <form id="add-question-form">
+            <label for="quiz-select" class="labels">Select quiz to modify:</label><br>
+            <select name="quiz-select" id="quiz-select">
+            </select><br>
+            <h3>Add new question to quiz:</h3>
+            <label for="question-input">Add question with true/false answer:</label><br>
+            <input type="text" id="question-input" name="question-input" placeholder="Write here your amazing question"><br>
+            <label for="answer-select">Select correct answer to the question:</label><br>
+            <select name="c" id="answer-select">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select><br>
+            <button type="submit" id="add-question-btn">Add</button>
+            </form>
+
+            <h3>Create new quiz:</h3>
+            <label for="new-quiz-input">Write new quiz name:</label><br>
+            <input type="text" id="new-quiz-input" name="new-quiz-input" placeholder="Write here name of your new quiz"><br>
+            <button type="button" id="create-quiz-btn">Create</button>
+    </div>
+
+    <div id="question-table-div">
+
+            <table id="quiz-table">
+                <!-- <caption>Quiz questions</caption> -->
+                <thead id="table-titles">
+                    <tr>
+                        <th>Question(double-click to remove)</th>
+                        <th><button type="submit" id="show-answers-button">Show answers</button></th>
+                        <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+
+            </table>
+
+    </div>
+
+    <div id="quiz-div">
+        <div id="play-quiz-select-div">
+            <label for="play-quiz-select">Select quiz to play:</label><br>
+            <select name="play-quiz-select" id="play-quiz-select">
+            </select><br>
+            <button id="start-quiz-button" type="button">START QUIZ</button>
+        </div>
+    </div>
+
+    <div id="footer-div">
+        <p>Hubert Michalski 2024</p>
+        <a href="used-pages.txt" id="ref-link">References</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+
+https://www.w3schools.com/html/html_forms.asp -- forms
+https://www.w3schools.com/css/css_table.asp -- styling tables
+https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/ - centering div inside div
+https://www.w3schools.com/html/html_tables.asp -- tables
+https://www.w3schools.com/js/js_loop_while.asp -- writing loops in js
+https://stackoverflow.com/questions/51275730/populate-html-table-with-json-data -- filling table with json
+https://stackoverflow.com/questions/4155038/using-jquery-in-a-javascript-function -- cleariing select with jquery
+https://www.geeksforgeeks.org/how-to-add-edit-and-delete-data-in-html-table-using-javascript/ -- edit button functionality
