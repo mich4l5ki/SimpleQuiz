@@ -51,7 +51,7 @@ function fillTable() {
         var timer;
         tr.ondblclick = deleteQuestion;
         tr.setAttribute("data-id", question);
-        tr.innerHTML = '<td>' + question + '</td>' +
+        tr.innerHTML = '<td id="question-td">' + question + '</td>' +
                        "<td value='" + answer + "'>hidden answer</td>" +
                        "<td><button onclick='editData(this)'>Edit</button>";
         tbody.appendChild(tr);
@@ -167,10 +167,15 @@ function editData(button) {
     }
 
     var quizName = document.getElementById("quiz-select").value
-    alert(quizName)
-    removeQuestionFromDB(question, quizName);
+
+    removeQuestionFromDB(question.innerHTML, quizName);
     const quizes = JSON.parse(localStorage.getItem("quizes"));
     quizes[quizName][questionInput] = answerInput;
     localStorage.setItem('quizes', JSON.stringify(quizes));
-    fillTable;
+    fillTable();
 }
+
+document.getElementById("start-quiz-button").addEventListener("click", () => {
+    var quizName = document.getElementById("play-quiz-select").value;
+    window.location.href = "playing-quiz.html?quizName=" + quizName;
+});
